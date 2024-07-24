@@ -1,18 +1,33 @@
-## Getting Started
+# Ejercicio de Secuencia Aritmetica
+**Problema: Secuencia de Números**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Imagina que tienes una secuencia de números en la forma de una lista (o arreglo). Tu tarea es escribir un algoritmo que determine si la secuencia sigue una progresión aritmética. En una progresión aritmética, la diferencia entre dos términos consecutivos es siempre constante.
 
-## Folder Structure
+**Instrucciones:**
 
-The workspace contains two folders by default, where:
+1.  **Entrada**: Una lista de números enteros.
+2.  **Salida**: `True` si la lista es una progresión aritmética, `False` en caso contrario.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**Ejemplo:**
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-   Entrada: `[3, 6, 9, 12]`
+    
+-   Salida: `True`
+    
+-   Entrada: `[1, 2, 4, 7]`
+    
+-   Salida: `False`
+    
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+**Pistas para resolverlo:**
 
-## Dependency Management
+1.  Calcula la diferencia entre el primer y el segundo elemento de la lista.
+2.  Compara esta diferencia con la diferencia entre todos los pares de elementos consecutivos en la lista.
+3.  Si todas las diferencias son iguales, la lista es una progresión aritmética.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**¿Cómo hacerlo en código?**
+
+1.  Verifica que la lista tenga al menos dos elementos.
+2.  Calcula la diferencia entre el primer par de elementos.
+3.  Itera a través de la lista para verificar que todas las diferencias sean iguales.
+![enter image description here](https://pbs.twimg.com/media/EaPnvYcXgAMpQLd.jpg:large)
